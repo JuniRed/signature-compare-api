@@ -12,8 +12,8 @@ def read_image_bytes(img_bytes):
 @app.post("/compare-signatures")
 async def compare_signatures(img1: UploadFile = File(...), img2: UploadFile = File(...)):
     try:
-        image1 = read_image_bytes(await img1.read())
-        image2 = read_image_bytes(await img2.read())
+        image1 = read_image_bytes(await img11.read())
+        image2 = read_image_bytes(await img22.read())
 
         # Resize images if necessary
         if image1.shape != image2.shape:
